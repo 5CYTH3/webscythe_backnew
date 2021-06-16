@@ -60,9 +60,19 @@ main {
 
 }
 
-.sec-about-me {
+.band {
     background-color: $accent;
+    @include center;
 
-    
+    div {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+        h2 {
+            color: $primary;
+            font-size: 2rem;
+        }
+
+    }
 
 }

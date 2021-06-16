@@ -44,8 +44,19 @@ main section div p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.sec-about-me {
+.band {
   background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.band div {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.band div h2 {
+  color: #EEEEEE;
+  font-size: 2rem;
 }
 
 * {
