@@ -1,4 +1,44 @@
 main {
-    
+    background-color: $altern;
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+
+        nav {
+            width: 1000px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+    }
+
+    section {        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h2, p {
+                color: $accent;
+            }
+            text-align: center;
+            
+            p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }   
+
+        }
+
+    }
 
 }

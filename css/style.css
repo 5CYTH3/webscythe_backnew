@@ -1,6 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
+main {
+  background-color: #ECECEA;
+}
+main header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+main header nav {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+main section div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+main section div h2, main section div p {
+  color: #0e0e0e;
+}
+main section div p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -16,7 +50,8 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Montserrat";
+  font-size: 3rem;
+  font-family: "Syncopate";
   font-weight: 200;
   color: #0e0e0e;
 }
