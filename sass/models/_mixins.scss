@@ -1,0 +1,6 @@
+@mixin hovered_link {
+    background-color: rgb(255, 255, 255, 0.8);
+    border-color: $altern;
+    border-radius: 10%;
+    margin: 10px;
+}
