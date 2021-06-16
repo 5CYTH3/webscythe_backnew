@@ -16,6 +16,15 @@ main header nav {
   flex-direction: row;
   justify-content: space-between;
 }
+main header nav div a {
+  font-size: 1.2rem;
+}
+main header nav div a:first-child {
+  margin-right: 15px;
+}
+main header nav div h1 {
+  font-size: 2rem;
+}
 main section {
   display: flex;
   justify-content: center;
@@ -35,6 +44,10 @@ main section div p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.sec-about-me {
+  background-color: #0e0e0e;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -47,6 +60,13 @@ body {
 h1 {
   font-family: "Lora";
   color: #0e0e0e;
+}
+
+a {
+  color: #0e0e0e;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 600;
 }
 
 h2, h3, h4, h5, h6 {
