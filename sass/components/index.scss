@@ -1,38 +1,49 @@
 section {        
     @include center;
-    flex-direction: column;
-    height: 300px;
+    height: auto;
+    width: 100%;
 
-    img {
+    .main__container {
+        @include center;
+        flex-direction: column;
+        margin-top: 30px;
+        max-width: 1600px;
+        width: 85%;
 
-    }
-
-    .container {
-        h2 {
-
-            span {
-                color: $secondary;
-
+        img {
+            margin-top: 50px;
+            width: 372px;
+            height: 374px;
+    
+        }
+    
+        .text__container {
+            h2 {
+                span {
+                    color: $secondary;
+    
+                }
+    
             }
-
-        }
-
-        p {
-
-
-        }
-
-        button {
-            margin-top: 15px;
-            height: 50px;
-            width: 100px;
-            font-family: 'Montserrat';
-            font-weight: 600;
-            color: $primary;
-            border: none;
-            border-radius: 15px;
-            background-color: $secondary;
-
+    
+            p {
+    
+    
+            }
+    
+            button {
+                margin-top: 15px;
+                height: 50px;
+                width: 100px;
+                font-family: 'Montserrat';
+                font-weight: 600;
+                color: $primary;
+                border: none;
+                border-radius: 15px;
+                background-color: $secondary;
+    
+            }
+    
         }
 
     }

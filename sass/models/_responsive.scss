@@ -1,0 +1,48 @@
+@media screen and (min-width: 600px) {
+    .container {
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+
+        }   
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+
+        }
+
+        button {
+            width: 200px;
+            height: 100px;
+
+        }
+
+    }
+
+    section {
+        .main__container {
+            img {
+                width: 558px;
+                height: 561px;
+        
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 1080px) {
+    
+    section {
+        .main__container {
+            justify-content: space-around;
+            flex-direction: row;
+
+        }
+
+    }
+
+}

@@ -5,13 +5,27 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 300px;
+  height: auto;
+  width: 100%;
 }
-section .container h2 span {
+section .main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  max-width: 1600px;
+  width: 85%;
+}
+section .main__container img {
+  margin-top: 50px;
+  width: 372px;
+  height: 374px;
+}
+section .main__container .text__container h2 span {
   color: #039BE5;
 }
-section .container button {
+section .main__container .text__container button {
   margin-top: 15px;
   height: 50px;
   width: 100px;
@@ -80,6 +94,31 @@ header nav .nav__menu ul li h1 {
   .uil-bars {
     transition: 0.5s;
     display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .container p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .container button {
+    width: 200px;
+    height: 100px;
+  }
+
+  section .main__container img {
+    width: 558px;
+    height: 561px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  section .main__container {
+    justify-content: space-around;
+    flex-direction: row;
   }
 }
 * {
