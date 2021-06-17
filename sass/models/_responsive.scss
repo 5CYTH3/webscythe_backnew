@@ -1,3 +1,6 @@
+///////////////////////
+// Header responsive //
+///////////////////////
 @media screen and (min-width: 600px) {
     
     nav {
@@ -20,7 +23,9 @@
     }
 
 }
-
+//////////////////////////////
+// First section responsive //
+//////////////////////////////
 @media screen and (min-width: 600px) {
 
     section {
@@ -122,3 +127,18 @@
     }
 }
 
+@media screen and (max-width: 390px) {  
+    
+    section {
+        .main__container {
+            img {
+                width: 279.5px;
+                height: 280.5px;
+        
+            }
+
+        }
+
+    }
+
+}

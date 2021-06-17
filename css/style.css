@@ -46,6 +46,10 @@ section .main__container .text__container button {
   border: none;
   border-radius: 15px;
   background-color: #039BE5;
+  box-shadow: 15px 5px 5px rgba(255, 255, 255, 0.2);
+}
+section .main__container .text__container button:hover {
+  box-shadow: 15px 5px 5px rgba(255, 255, 255, 0.2);
 }
 
 header {
@@ -163,6 +167,12 @@ header nav .nav__menu ul li h1 {
     width: 180px;
     height: 70px;
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  section .main__container img {
+    width: 279.5px;
+    height: 280.5px;
   }
 }
 * {
