@@ -18,7 +18,12 @@ section {
         }
     
         .text__container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
             h2 {
+                text-align: center;
                 span {
                     color: $secondary;
     
@@ -27,8 +32,7 @@ section {
             }
     
             p {
-    
-    
+                text-align: center;
             }
     
             button {
