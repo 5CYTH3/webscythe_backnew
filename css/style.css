@@ -1,61 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Syncopate&display=swap");
-main {
-  background-color: #ECECEA;
+section {
+  padding: 100px;
 }
-main header {
+
+header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
 }
-main header nav {
+header nav {
   width: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-main header nav div a {
+header nav div a {
   font-size: 1.2rem;
 }
-main header nav div a:first-child {
+header nav div a:first-child {
   margin-right: 15px;
 }
-main header nav div h1 {
-  font-size: 2rem;
+header nav div a:last-child {
+  margin-left: 15px;
 }
-main section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-}
-main section div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-main section div h2, main section div p {
-  color: #0e0e0e;
-}
-main section div p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.band {
-  background-color: #0e0e0e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.band div {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.band div h2 {
-  color: #EEEEEE;
+header nav div h1 {
   font-size: 2rem;
 }
 
@@ -65,7 +36,7 @@ main section div p {
 }
 
 body {
-  background-color: #EEEEEE;
+  background-color: #f5f5f5;
 }
 
 h1 {

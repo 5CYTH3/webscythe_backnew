@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+
+    nav {
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        div {
+            
+            a {
+                font-size: 1.2rem;
+                
+            }
+
+            a:first-child {
+                margin-right: 15px;
+            }
+
+            a:last-child {
+                margin-left: 15px;
+
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+        }
+
+    }
+
+}
