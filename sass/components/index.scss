@@ -1,4 +1,40 @@
 section {        
-    padding: 100px;
+    @include center;
+    flex-direction: column;
+    height: 300px;
+
+    img {
+
+    }
+
+    .container {
+        h2 {
+
+            span {
+                color: $secondary;
+
+            }
+
+        }
+
+        p {
+
+
+        }
+
+        button {
+            margin-top: 15px;
+            height: 50px;
+            width: 100px;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            color: $primary;
+            border: none;
+            border-radius: 15px;
+            background-color: $secondary;
+
+        }
+
+    }
 
 }

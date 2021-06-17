@@ -30,10 +30,15 @@ a {
 }
 
 h2, h3, h4, h5, h6 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Syncopate';
     font-weight: 200;
     color: $accent;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 html {
