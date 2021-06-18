@@ -94,6 +94,9 @@ section .main__container .text__container button:hover {
   min-height: 305.95px;
 }
 
+.section__3 {
+  background-color: #20272E;
+}
 header {
   height: 70px;
   display: flex;
