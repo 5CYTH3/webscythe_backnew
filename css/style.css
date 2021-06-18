@@ -71,13 +71,27 @@ section .main__container .text__container button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .section__2 .title__container h2 {
   color: #039BE5;
   text-decoration: underline;
 }
-.section__2 .para__container p {
-  font-size: 2rem;
+.section__2 .main__second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.section__2 .main__second .para__container p {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+.section__2 .main__second img {
+  width: 50%;
+  height: 50%;
+  min-width: 567px;
+  min-height: 305.95px;
 }
 
 header {
@@ -157,6 +171,26 @@ header nav .nav__menu ul li h1 {
   section .main__container img {
     width: 558px;
     height: 561px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .section__2 .main__second img {
+    min-width: none;
+    min-height: none;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .section__2 .main__second {
+    flex-direction: column;
+  }
+  .section__2 .main__second .para__container {
+    margin-bottom: 30px;
+  }
+  .section__2 .main__second .para__container p {
+    text-align: center;
+  }
+  .section__2 .title__container {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1180px) {
