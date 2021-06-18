@@ -12,8 +12,8 @@ section {
 
         img {
             margin-top: 50px;
-            width: 372px;
-            height: 374px;
+            width: 90%;
+            height: 90%;
     
         }
     
@@ -24,6 +24,8 @@ section {
 
             h2 {
                 text-align: center;
+                font-size: clamp(1.5rem, 3.5vw, 3rem);
+                
                 span {
                     color: $secondary;
     
@@ -32,24 +34,28 @@ section {
             }
     
             p {
+                font-size: clamp(1rem, 3.5vw, 2rem);
                 text-align: center;
             }
     
             button {
                 margin-top: 15px;
                 height: 50px;
-                width: 100px;
-                font-family: 'Montserrat';
-                font-weight: 600;
+                width: 120px;
+                @include center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 color: $primary;
+                font-size: 1.3rem;
                 border: none;
                 border-radius: 15px;
                 background-color: $secondary;
 
-                box-shadow: 15px 5px 5px rgba(255, 255, 255, .20);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .20);
+                transition: .2s;
 
                 &:hover {
-                    box-shadow: 15px 5px 5px rgba(255, 255, 255, .20);
+                    transition: .2s;
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, .20);
 
                 }
     

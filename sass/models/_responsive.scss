@@ -32,12 +32,10 @@
 
         .text__container {
             h2 {
-                font-size: 2.5rem;
                 text-align: start;
             }   
     
             p {
-                font-size: 1.5rem;
                 text-align: start;
             }
     
@@ -106,11 +104,11 @@
             .text__container {
 
                 h2 {
-                    font-size: 3rem;
+                    
                 }   
         
                 p {
-                    font-size: 2rem;
+
                 }
 
                 button {
@@ -125,20 +123,4 @@
         }
 
     }
-}
-
-@media screen and (max-width: 390px) {  
-    
-    section {
-        .main__container {
-            img {
-                width: 279.5px;
-                height: 280.5px;
-        
-            }
-
-        }
-
-    }
-
 }
