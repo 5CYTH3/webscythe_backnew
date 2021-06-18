@@ -76,6 +76,9 @@ section .main__container .text__container button:hover {
   color: #039BE5;
   text-decoration: underline;
 }
+.section__2 .para__container p {
+  font-size: 2rem;
+}
 
 header {
   height: 70px;
