@@ -138,19 +138,32 @@ section .main__container .text__container button:hover {
   color: #f5f5f5;
   margin-left: 20px;
 }
-.section__3 .grid .grid__item .img-w {
-  height: 60px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+.section__3 .grid .grid__item a:hover {
+  text-decoration: underline;
 }
 .section__3 .grid .grid__item .image__wrapper1 {
   background-image: url("/res/img/untitled-project@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: 25% 30%;
+  height: 60px;
+  width: 100%;
 }
 .section__3 .grid .grid__item .image__wrapper2 {
   background-image: url("/res/img/FondDomainenantais.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: 0 40%;
+  height: 60px;
+  width: 100%;
+}
+.section__3 .grid .grid__item .image__wrapper3 {
+  background-image: url("/res/img/FondCDLD.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 40%;
+  height: 60px;
+  width: 100%;
 }
 .section__3 .grid .grid__item:hover {
   transform: translateY(-5px);

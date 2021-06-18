@@ -163,25 +163,25 @@ section {
                 color: $primary;
                 margin-left: 20px;
 
-            }
+                &:hover {
+                    text-decoration: underline;
 
-            .img-w {
-                height: 60px;
-                width: 100%;
-                background-size: cover;
-                background-repeat: no-repeat;
+                }
 
             }
 
             .image__wrapper1 {
-                background-image: url('/res/img/untitled-project@2x.png');
-                background-position: 25% 30%;
+                @include card-image('/res/img/untitled-project@2x.png', 25%, 30%);
                 
             }
 
             .image__wrapper2 {
-                background-image: url('/res/img/FondDomainenantais.png');
-                background-position: 0 40%;
+                @include card-image('/res/img/FondDomainenantais.png', 0, 40%);
+
+            }
+
+            .image__wrapper3 {
+                @include card-image('/res/img/FondCDLD.png', 0, 40%);
 
             }
 

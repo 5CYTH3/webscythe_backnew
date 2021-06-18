@@ -4,3 +4,13 @@
     align-items: center;
 
 }
+
+@mixin card-image($path, $coord-x, $coord-y) {
+    background-image: url($path);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: $coord-x $coord-y;
+    height: 60px;
+    width: 100%;
+
+}
