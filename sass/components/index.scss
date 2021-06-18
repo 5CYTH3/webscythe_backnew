@@ -117,16 +117,85 @@ section {
 }
 
 .section__3 {
+    width: 100%;
+    background-color: $altern;
+    display: flex;
+    flex-direction: column;
 
-    background-color: $darken;
+    .title__container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include center;
+
+    }
 
     .grid {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 2em;
+        margin-bottom: 30px;
 
         .grid__item {
+            background-color: $darken;
+            width: 400px;
+            height: 200px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .20);
+            transition: .2s;
 
+            h3 {
+                margin-top: 5px;
+                margin-left: 20px;
+                color: $primary;
+                font-size: 1.5rem;
+            }
+
+            p {
+                margin-top: 5px;
+                margin-left: 20px;
+                color: $primary;
+                margin-bottom: 20px;
+            }
+
+            a {
+                
+                color: $primary;
+                margin-left: 20px;
+
+            }
+
+            .img-w {
+                height: 60px;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+            }
+
+            .image__wrapper1 {
+                background-image: url('/res/img/untitled-project@2x.png');
+                background-position: 25% 30%;
+                
+            }
+
+            .image__wrapper2 {
+                background-image: url('/res/img/FondDomainenantais.png');
+                background-position: 0 40%;
+
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 15px rgba(0, 0, 0, .20);
+                transition: .2s;
+                
+            }
 
             
         }
+
+        
 
     }
 
