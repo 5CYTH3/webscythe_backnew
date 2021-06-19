@@ -171,6 +171,33 @@ section .main__container .text__container button:hover {
   transition: 0.2s;
 }
 
+.section__4 .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.section__4 .flex .flex__item {
+  width: 250px;
+  height: 250px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.section__4 .flex .flex__item .top__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.section__4 .flex .flex__item .top__container img {
+  height: 70px;
+  width: 70px;
+}
 header {
   height: 70px;
   display: flex;
