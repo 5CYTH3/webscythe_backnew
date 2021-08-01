@@ -172,3 +172,14 @@
 
     }
 }
+
+@media screen and (max-width: 1305px) {
+
+    .section__3 {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+}
