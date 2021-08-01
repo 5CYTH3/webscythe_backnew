@@ -227,69 +227,92 @@ header nav .nav__menu ul li h1 {
   display: flex;
   flex-direction: column;
 }
-.section__1c .title__container {
+.section__1c .main__wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section__1c .main__wrapper .title__wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.section__1c .main__wrapper .title__wrapper .title__container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 120px;
 }
-.section__1c .grid {
+.section__1c .main__wrapper .title__wrapper .title__container h2 {
+  font-size: 4rem;
+}
+.section__1c .main__wrapper .title__wrapper .title__container p {
+  font-size: 2rem;
+}
+.section__1c .main__wrapper .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5em;
 }
-.section__1c .grid .grid__item {
+.section__1c .main__wrapper .grid .grid__item {
   width: 250px;
   height: 120px;
   background-color: #ebebeb;
   border-radius: 10px;
-  margin-bottom: 20px;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  margin: 15px;
 }
-.section__1c .grid .grid__item .top__container {
+.section__1c .main__wrapper .grid .grid__item .top__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
-.section__1c .grid .grid__item .top__container h4 {
+.section__1c .main__wrapper .grid .grid__item .top__container h4 {
   font-family: "Lora";
 }
-.section__1c .grid .grid__item .top__container img {
+.section__1c .main__wrapper .grid .grid__item .top__container img {
   height: 70px;
   width: 70px;
 }
-.section__1c .grid .grid__item .percentage1 {
+.section__1c .main__wrapper .grid .grid__item .percentage1 {
   height: 100%;
   width: 95%;
   background-color: #039BE5;
 }
-.section__1c .grid .grid__item .percentage2 {
+.section__1c .main__wrapper .grid .grid__item .percentage2 {
   height: 100%;
   width: 80%;
   background-color: #039BE5;
 }
-.section__1c .grid .grid__item .percentage3 {
+.section__1c .main__wrapper .grid .grid__item .percentage3 {
   height: 100%;
   width: 40%;
   background-color: #039BE5;
 }
-.section__1c .grid .grid__item .percentage4 {
+.section__1c .main__wrapper .grid .grid__item .percentage4 {
   height: 100%;
   width: 70%;
   background-color: #039BE5;
 }
-.section__1c .grid .grid__item .percentage5 {
+.section__1c .main__wrapper .grid .grid__item .percentage5 {
   height: 100%;
   width: 50%;
   background-color: #039BE5;
 }
-.section__1c .grid .grid__item .percentage6 {
+.section__1c .main__wrapper .grid .grid__item .percentage6 {
   height: 100%;
   width: 30%;
   background-color: #039BE5;
 }
-.section__1c .grid .grid__item .perc__container {
+.section__1c .main__wrapper .grid .grid__item .perc__container {
   overflow: hidden;
   margin-top: 10px;
   margin-bottom: 10px;
