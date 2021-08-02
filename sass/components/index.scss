@@ -16,6 +16,8 @@ section {
             width: 90%;
             height: 90%;
 
+            animation: logoAnimation 2s infinite;
+
         }
 
         .text__container {
@@ -68,6 +70,20 @@ section {
 
 }
 
+@keyframes logoAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    
+
+}
+
+
     // Section 2
 
 .section__2 {
@@ -96,7 +112,7 @@ section {
         .para__container {
 
             p {
-                font-size: clamp(1.5rem, 2vw, 2rem);
+                font-size: clamp(1rem, 2vw, 1.5rem);
                 
     
             }
