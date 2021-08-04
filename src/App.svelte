@@ -6,6 +6,8 @@
 
     export let url = "";
 
+	console.log("?... App loaded !");
+
 </script>
 
 <main>

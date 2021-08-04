@@ -1,3 +1,7 @@
+<script>
+    console.log("?... Homepage loaded !");
+</script>
+
 <section>
     <div class="main__container">
         <div class="text__container">
