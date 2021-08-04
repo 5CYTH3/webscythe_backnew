@@ -6,7 +6,7 @@
                 <br>in Brittany, in France.</p>
             <button>About</button>  
         </div>
-        <img src="res/img/blobchibi.png" alt="">
+        <img src="../res/img/blobchibi.png" alt="">
     </div>
 </section>
 <section class="section__2">
@@ -26,7 +26,7 @@
                 <br>Flutter enthusiast.
             </p>
         </div>
-        <img src="./res/img/dev_activity.svg" alt="">
+        <img src="../res/img/dev_activity.svg" alt="">
     </div>
 </section>
 <section class="section__3">
