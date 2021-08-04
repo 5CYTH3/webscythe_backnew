@@ -20,12 +20,12 @@
     <div class="main__second">
         <div class="para__container">
             <p>At the age of ten, I started to
-                <br>discover the programmation with Java and Spigot. 
+                <br>discover the programmation with Java and Spigot.
                 <br>Two years later, I decided to put Spigot away and
-                <br>improve my "pure" Java mastery. I also learnt the 
-                <br>basics of python, which opened new doors of 
+                <br>improve my "pure" Java mastery. I also learnt the
+                <br>basics of python, which opened new doors of
                 <br>possibilities for me. At the age of fourteen, I
-                <br>started to learn the front-end with HTML, CSS and 
+                <br>started to learn the front-end with HTML, CSS and
                 <br>then SASS. Actually, I am trying Svelte.js and I'm a
                 <br>Flutter enthusiast.
             </p>

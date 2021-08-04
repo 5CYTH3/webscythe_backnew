@@ -1,5 +1,5 @@
 TODO: 
-    MIGRATE PROJECT TO SVELTE
+    Implement Instagram API
 
 TOTALK:
     Location
