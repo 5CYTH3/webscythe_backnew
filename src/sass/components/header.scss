@@ -37,6 +37,7 @@ header {
                 li {
                     @include center;
                     list-style-type: none;
+                    text-decoration: none;
                     margin-right: 40px;
 
                     &:hover {
