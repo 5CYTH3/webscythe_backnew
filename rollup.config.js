@@ -58,8 +58,6 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
-		scss(),
-
 		// In dev mode, call `npm run start` once
 		// the bundle has been generated
 		!production && serve(),
@@ -70,7 +68,9 @@ export default {
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
-		production && terser()
+		production && terser(),
+		scss()
+		
 	],
 	watch: {
 		clearScreen: false

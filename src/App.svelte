@@ -40,7 +40,7 @@
 					<br>Flutter enthusiast.
 				</p>
 			</div>
-			<img src="res/img/dev_activity.svg" alt="">
+			<img src="./res/img/dev_activity.svg" alt="">
 		</div>
 	</section>
 	<section class="section__3">
