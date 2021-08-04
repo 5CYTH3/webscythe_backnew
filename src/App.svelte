@@ -1,17 +1,8 @@
+<script>
+import Navigation from "./components/Navigation.svelte";
+
+</script>
 <main>
-	<header id="header">
-		<nav id="navbar" class="container">
-			<a href="index.html"><h1>Scythe</h1></a>
-			<div class="nav__menu">
-				<ul class="nav__list" id="nav-list">
-					<li><a href="#" class="nav__link"><i class="uil uil-diary"></i>Contact</a></li>
-					<li><a href="skills.html" class="nav__link"><i class="uil uil-clipboard-alt"></i>Skills</a></li>
-					<li><a href="#" class="nav__link"><i class="uil uil-github-alt"></i>Github</a></li>
-				</ul>
-			<i class="uil uil-bars"></i>
-			</div> 
-		</nav>
-	</header>
 	<section>
 		<div class="main__container">
 			<div class="text__container">
