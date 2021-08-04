@@ -7,7 +7,6 @@
     export let url = "";
 
 	console.log("?... App loaded !");
-
 </script>
 
 <main>
@@ -22,9 +21,9 @@
 						<li><a href="https://github.com/5CYTH3" class="nav__link"><i class="uil uil-github-alt"></i>Github</a></li>
 					</ul>
 				<i class="uil uil-bars"></i>
-				</div> 
+				</div>
 			</nav>
-		</header>	
+		</header>
 		<div>
 			<Route path="/"><Home /></Route>
 			<Route path="Contact" component="{Contact}" />
