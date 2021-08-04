@@ -76,7 +76,7 @@ section {
     }
 
     50% {
-        transform: rotate(10deg);
+        transform: rotate(5deg);
     }
 
     
@@ -89,6 +89,7 @@ section {
 .section__2 {
     display: flex;
     flex-direction: column;
+    background-color: $altern;
 
     .title__container {
         width: 100%;
@@ -98,8 +99,9 @@ section {
         
 
         h2 {
-            color: $secondary;
+            color: $accent;
             text-decoration: underline;
+            text-decoration-color: $secondary;
         }
 
     }
@@ -108,6 +110,7 @@ section {
         @include center;
         justify-content: space-around;
         flex-direction: row;
+        margin-bottom: 30px;
 
         .para__container {
 
@@ -120,8 +123,8 @@ section {
         }
 
         img {
-            width: 50%;
-            height: 50%;
+            width: 40%;
+            height: 40%;
 
             min-width: 567px;
             min-height: 305.95px;
@@ -134,7 +137,6 @@ section {
 
 .section__3 {
     width: 100%;
-    background-color: $altern;
     display: flex;
     flex-direction: column;
 
