@@ -10,9 +10,15 @@
 @import 'models/responsive';
 
 
+// sass src/sass/style.scss:public/build/bundle.css --watch
+
 * {
     padding: 0;
     margin: 0;
+}
+
+section {
+    @include center;
 }
 
 body {

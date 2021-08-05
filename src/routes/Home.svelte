@@ -2,7 +2,7 @@
     console.log("?... Homepage loaded !");
 </script>
 
-<section>
+<section class="section__1">
     <div class="main__container">
         <div class="text__container">
             <h2>Hi, I'm <span>Lucas</span></h2>
@@ -59,20 +59,28 @@
         </div>
     </div>
 </section>
-<section>
+<section class="section__4">
     <!-- Create languages section (for languages that i speak and master) -->
     <div>
         <div class="lang__container">
-            <img src="" alt="">
-            <p>French<br>(Native speaker)</p>
+            <img src="/res/languages/France.png" alt="">
+            <div>
+                <h6>French<br>(Native speaker)</h6>
+            </div>
         </div>
         <div class="lang__container">
-            <img src="" alt="">
-            <p>American English (Fluent)</p>
+            <img src="/res/languages/USA.png" alt="">
+            <div>
+                <h6>American English <br>(Fluent)</h6>
+                <p>I am actually close to bilingual. There's no problem for me to talk with English people and give informations</p>
+            </div>
         </div>
         <div class="lang__container">
-            <img src="" alt="">
-            <p>Spanish (High School notions)</p>
+            <img src="/res/languages/Espana.png" alt="">
+            <div>
+                <h6>Spanish <br>(High School notions)</h6>
+                <p>I can handle a short conversation with spanish speakers.</p>
+            </div>
         </div>
     </div>
 
