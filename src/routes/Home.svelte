@@ -65,20 +65,20 @@
         <div class="lang__container">
             <img src="/res/languages/France.png" alt="">
             <div>
-                <h6>French<br>(Native speaker)</h6>
+                <h6>French<br class="responsive">(Native speaker)</h6>
             </div>
         </div>
         <div class="lang__container">
             <img src="/res/languages/USA.png" alt="">
             <div>
-                <h6>American English <br>(Fluent)</h6>
-                <p>I am actually close to bilingual. There's no problem for me to talk with English people and give informations</p>
+                <h6>American English <br class="responsive">(Fluent)</h6>
+                <p>I am actually close to bilingual. <span>There's no problem for me to talk with English people and give informations</span></p>
             </div>
         </div>
         <div class="lang__container">
             <img src="/res/languages/Espana.png" alt="">
             <div>
-                <h6>Spanish <br>(High School notions)</h6>
+                <h6>Spanish <br class="responsive"><span>(High School notions)</span></h6>
                 <p>I can handle a short conversation with spanish speakers.</p>
             </div>
         </div>
