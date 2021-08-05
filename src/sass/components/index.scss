@@ -189,17 +189,17 @@ section {
             }
 
             .image__wrapper1 {
-                @include card-image('/res/img/untitled-project@2x.png', 25%, 30%);
+                @include card-image('/res/img/project/untitled-project@2x.png', 25%, 30%);
                 
             }
 
             .image__wrapper2 {
-                @include card-image('/res/img/FondDomainenantais.png', 0, 40%);
+                @include card-image('/res/img/project/FondDomainenantais.png', 0, 40%);
 
             }
 
             .image__wrapper3 {
-                @include card-image('/res/img/FondCDLD.png', 0, 40%);
+                @include card-image('/res/img/project/FondCDLD.png', 0, 40%);
 
             }
 

@@ -10,7 +10,7 @@
                 <br>in Brittany, in France.</p>
             <button>About</button>  
         </div>
-        <img src="../res/img/blobchibi.png" alt="">
+        <img src="/res/img/blobchibi.png" alt="">
     </div>
 </section>
 <section class="section__2">
@@ -30,7 +30,7 @@
                 <br>Flutter enthusiast.
             </p>
         </div>
-        <img src="../res/img/dev_activity.svg" alt="">
+        <img src="../res/img/illustrations/dev_activity.svg" alt="">
     </div>
 </section>
 <section class="section__3">
@@ -62,7 +62,18 @@
 <section>
     <!-- Create languages section (for languages that i speak and master) -->
     <div>
-
+        <div class="lang__container">
+            <img src="" alt="">
+            <p>French<br>(Native speaker)</p>
+        </div>
+        <div class="lang__container">
+            <img src="" alt="">
+            <p>American English (Fluent)</p>
+        </div>
+        <div class="lang__container">
+            <img src="" alt="">
+            <p>Spanish (High School notions)</p>
+        </div>
     </div>
 
 </section>

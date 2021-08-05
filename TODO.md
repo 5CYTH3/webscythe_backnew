@@ -1,5 +1,6 @@
 TODO: 
-    Implement Instagram API
+    Implement Twitter API
+    Add animations
 
 TOTALK:
     Location
@@ -8,16 +9,12 @@ TOTALK:
 
 IDEAS:
     Integrate logo
-    Integrate insta's posts
 
     Put the languages that i know (idioma) into the skills section
     
 PAGES:
     Contact
     Skills
-    Index
 
 TEXT:
-    "*Just sayin what i do and what i'm currently learning*",
-    "*Little cards with txt and image of my projects*",
     "To hire me: mail, phone, insta, gh, twitter"
