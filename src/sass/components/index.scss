@@ -115,7 +115,8 @@
         .para__container {
 
             p {
-                font-size: clamp(1rem, 2vw, 1.5rem);
+                font-size: clamp(0.9rem, 2vw, 1.5rem);
+                padding: 15px;
                 
     
             }
@@ -126,9 +127,8 @@
             width: 40%;
             height: 40%;
 
-            min-width: 567px;
-            min-height: 305.95px;
-
+            min-width: 329px;
+            min-height: 178px;
         }   
 
     }
@@ -221,22 +221,25 @@
     background-color: $altern;
 
     div {
-        width: 95%;
+        width: 90%;
 
         .lang__container {
             display: flex;
             flex-direction: row;
+            max-width: 80%;
 
             img {
                 width: 40%;
                 height: 40%;
+                min-width: 200px;
             }
 
             div {
-                margin-top: 70px;
+                margin-top: 3%;
                 margin-left: 30px;
                 display: flex;
                 flex-direction: column;
+                min-width: 410px;
 
             }
 

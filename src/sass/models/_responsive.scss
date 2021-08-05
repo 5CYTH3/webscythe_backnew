@@ -175,3 +175,35 @@
     }
 
 }
+
+@media screen and (max-width: 470px) {
+    .section__3 {
+
+        .grid {
+            gap: 1.5em;
+
+            .grid__item {
+                width: 320px;
+                height: 160px;
+
+                p {
+                    display: none;
+                }
+
+                a {
+                    text-decoration: underline;
+                }
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 15px 15px rgba(0, 0, 0, .20);
+                    transition: .2s;
+
+                }
+
+            }
+
+        }
+
+    }
+}
