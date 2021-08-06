@@ -1,12 +1,16 @@
 <script>
-    console.log("?... Homepage loaded !");
+console.log("?... Homepage loaded !");
+    
+    
+
 </script>
 
 <section class="section__1">
     <div class="main__container">
         <div class="text__container">
             <h2>Hi, I'm <span>Lucas</span></h2>
-            <p>a young french Webdev based
+            <h5>Front-End / Mobile Developer</h5>
+            <p>I am a young french learning fan based
                 <br>in Brittany, in France.</p>
             <button>About</button>  
         </div>
@@ -83,7 +87,6 @@
             </div>
         </div>
     </div>
-
 </section>
 
 <footer>

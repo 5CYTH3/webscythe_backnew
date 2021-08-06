@@ -208,6 +208,34 @@
     }
 }
 
+@media screen and (max-width: 1290px) {
+    
+    .section__4 {
+        padding-bottom: 20px;
+        div {
+            .lang__container {
+                max-width: 95%;
+                
+                div {
+
+                    h6 {
+                        font-size: 2rem;
+
+                    }
+
+                    p {
+                        font-size: 1rem;
+
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width: 750px) {
     
     .section__4 {
