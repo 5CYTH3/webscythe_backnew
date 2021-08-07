@@ -1,6 +1,20 @@
 <script>
-console.log("?... Homepage loaded !");
-    
+    import { createClient } from '@supabase/supabase-js'
+    import Card from '../components/Card.svelte'
+
+    const supabaseUrl = process.env.API_URL;
+    const supabaseKey = process.env.API_KEY;
+    const supabase = createClient(supabaseUrl, supabaseKey)
+    let projectsArray = [];
+
+    async function fetchData() {
+        let { data: projects, error } = await supabase.from('projects').select('*');
+        projectsArray = Array.from(projects)
+
+        return projectsArray;
+    }
+        
+    console.log("?... Home component loaded !")
     
 
 </script>
@@ -8,7 +22,7 @@ console.log("?... Homepage loaded !");
 <section class="section__1">
     <div class="main__container">
         <div class="text__container">
-            <h2>Hi, I'm <span>Lucas</span></h2>
+            <h2>Hi, I'm <span>{fetchData().name}</span></h2>
             <h5>Front-End / Mobile Developer</h5>
             <p>I am a young french learning fan based
                 <br>in Brittany, in France.</p>
@@ -42,25 +56,9 @@ console.log("?... Homepage loaded !");
         <h2>Latest projects</h2>
     </div>
     <div class="grid">
-        <div class="grid__item">
-            <div class="image__wrapper1"></div>
-            <h3>The Tasko app</h3>
-            <p>This app allows you to create task faster and easier than others. It is made in Flutter.</p>
-            <a href="https://github.com/5CYTH3/tasko_rem" target="blank">Learn more</a>
-        </div>
-        <div class="grid__item">
-            <div class="image__wrapper2"></div>
-            <h3>Le Domaine Nantais</h3>
-            <p>"Le Domaine Nantais" is a startup which provide rooms for weddings or meetings.</p>
-            <a href="https://domaine-nantais.com/" target="blank">Learn more</a>
-        </div>
-        <div class="grid__item">
-            <div class="image__wrapper3"></div>
-            <h3>Le centre de la danse</h3>
-            <p>This website has been a lot modified after I leave
-                <br>but the foundations are still here !</p>
-            <a href="https://lecentredeladanse.com/" target="blank">Learn more</a>
-        </div>
+        {#each fetchData() as { name, img_url, description, link }}
+            <Card name={name} description={description} img_url={img_url} link={link} />
+        {/each}
     </div>
 </section>
 <section class="section__4">

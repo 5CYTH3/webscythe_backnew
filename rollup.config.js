@@ -6,6 +6,7 @@ import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
 import scss from 'rollup-plugin-scss'
 import injectProcessEnv from 'rollup-plugin-inject-process-env'
+import json from '@rollup/plugin-json';
 import dotenv from 'dotenv';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -41,6 +42,7 @@ export default {
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
+		json(),
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
