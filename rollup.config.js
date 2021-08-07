@@ -5,14 +5,11 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
 import scss from 'rollup-plugin-scss'
-import json from '@rollup/plugin-json'
 import injectProcessEnv from 'rollup-plugin-inject-process-env'
 import dotenv from 'dotenv';
 
-dotenv.config();
-
-
 const production = !process.env.ROLLUP_WATCH;
+dotenv.config()
 
 function serve() {
 	let server;

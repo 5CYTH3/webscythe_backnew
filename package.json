@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "cross-env sirv public --no-clear"
+    "start": "sirv public --no-clear"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -23,7 +23,9 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "@rollup/plugin-json": "^4.1.0",
     "@supabase/supabase-js": "^1.21.0",
+    "rollup-plugin-inject-process-env": "^1.3.1",
     "sirv-cli": "^1.0.0",
     "svelte-routing": "^1.6.0"
   }
