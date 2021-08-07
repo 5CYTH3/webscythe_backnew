@@ -5,13 +5,15 @@
     const supabaseUrl = process.env.API_URL;
     const supabaseKey = process.env.API_KEY;
     const supabase = createClient(supabaseUrl, supabaseKey)
-    let projectsArray = [];
+
+    $: iterateArray = [];
 
     async function fetchData() {
         let { data: projects, error } = await supabase.from('projects').select('*');
-        projectsArray = Array.from(projects)
+        iterateArray = Array.from(projects);
+        console.log(iterateArray);
 
-        return projectsArray;
+        return iterateArray;
     }
         
     console.log("?... Home component loaded !")
@@ -22,7 +24,7 @@
 <section class="section__1">
     <div class="main__container">
         <div class="text__container">
-            <h2>Hi, I'm <span>{fetchData().name}</span></h2>
+            <h2>Hi, I'm <span>Lucas</span></h2>
             <h5>Front-End / Mobile Developer</h5>
             <p>I am a young french learning fan based
                 <br>in Brittany, in France.</p>
@@ -56,9 +58,12 @@
         <h2>Latest projects</h2>
     </div>
     <div class="grid">
-        {#each fetchData() as { name, img_url, description, link }}
-            <Card name={name} description={description} img_url={img_url} link={link} />
-        {/each}
+        {#await fetchData}
+            {#each fetchData as { name, img_url, description, link }}
+                <Card name={name} description={description} img_url={img_url} link={link} />
+
+            {/each}
+        {/await}
     </div>
 </section>
 <section class="section__4">
