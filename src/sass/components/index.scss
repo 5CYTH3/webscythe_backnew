@@ -163,6 +163,7 @@
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
         gap: 2em;
         margin-bottom: 30px;
 
@@ -201,19 +202,11 @@
 
             }
 
-            .image__wrapper1 {
-                @include card-image('/res/img/project/untitled-project@2x.png', 25%, 30%);
+            .image__wrapper {
+                overflow: hidden;
+                @include card-image;
+            
                 
-            }
-
-            .image__wrapper2 {
-                @include card-image('/res/img/project/FondDomainenantais.png', 0, 40%);
-
-            }
-
-            .image__wrapper3 {
-                @include card-image('/res/img/project/FondCDLD.png', 0, 40%);
-
             }
 
             &:hover {

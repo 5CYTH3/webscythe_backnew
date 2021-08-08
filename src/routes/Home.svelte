@@ -6,19 +6,18 @@
     const supabaseKey = process.env.API_KEY;
     const supabase = createClient(supabaseUrl, supabaseKey)
 
-    $: iterateArray = [];
-
     async function fetchData() {
-        let { data: projects, error } = await supabase.from('projects').select('*');
-        iterateArray = Array.from(projects);
-        console.log(iterateArray);
 
-        return iterateArray;
+        let { data: projects, error } = await supabase.from('projects').select('*');
+        console.log(projects)
+
+        return projects;
     }
+
+    fetchData()
+
         
     console.log("?... Home component loaded !")
-    
-
 </script>
 
 <section class="section__1">
@@ -26,8 +25,7 @@
         <div class="text__container">
             <h2>Hi, I'm <span>Lucas</span></h2>
             <h5>Front-End / Mobile Developer</h5>
-            <p>I am a young french learning fan based
-                <br>in Brittany, in France.</p>
+            <p>with open-minded code habits</p>
             <button>About</button>  
         </div>
         <img src="/res/img/blobchibi.png" alt="">
@@ -58,12 +56,12 @@
         <h2>Latest projects</h2>
     </div>
     <div class="grid">
-        {#await fetchData}
-            {#each fetchData as { name, img_url, description, link }}
-                <Card name={name} description={description} img_url={img_url} link={link} />
-
+        {#await fetchData() then data}
+            {#each data as { name, img_url, description, link }}
+                <Card description={description} link={link} name={name} image_url={img_url} />
             {/each}
         {/await}
+
     </div>
 </section>
 <section class="section__4">

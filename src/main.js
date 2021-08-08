@@ -4,7 +4,9 @@ import './dbStore.js';
 
 const app = new App({
 	target: document.body,
-	
+	props: {
+
+	}
 });
 
 export default app;
