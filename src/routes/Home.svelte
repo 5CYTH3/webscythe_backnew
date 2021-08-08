@@ -26,7 +26,7 @@
             <h2>Hi, I'm <span>Lucas</span></h2>
             <h5>Front-End / Mobile Developer</h5>
             <p>with open-minded code habits</p>
-            <button>About</button>  
+            <button>About</button>
         </div>
         <img src="/res/img/blobchibi.png" alt="">
     </div>
