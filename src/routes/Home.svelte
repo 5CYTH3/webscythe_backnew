@@ -1,6 +1,8 @@
 <script>
     import { createClient } from '@supabase/supabase-js'
     import Card from '../components/Card.svelte'
+    import { animateHeader } from "../animation";
+
 
     const supabaseUrl = process.env.API_URL;
     const supabaseKey = process.env.API_KEY;
@@ -13,9 +15,6 @@
 
         return projects;
     }
-
-    fetchData()
-
         
     console.log("?... Home component loaded !")
 </script>
@@ -23,12 +22,12 @@
 <section class="section__1">
     <div class="main__container">
         <div class="text__container">
-            <h2>Hi, I'm <span>Lucas</span></h2>
-            <h5>Front-End / Mobile Developer</h5>
-            <p>with open-minded code habits</p>
-            <button>About</button>
+            <h2 transition:animateHeader>Hi, I'm <span>Lucas</span></h2>
+            <h5 id="job" transition:animateHeader>Front-End / Mobile Developer</h5>
+            <p transition:animateHeader>with open-minded code habits</p>
+            <button transition:animateHeader>About</button>
         </div>
-        <img src="/res/img/blobchibi.png" alt="">
+        <img src="/res/img/blobchibi.png" alt="" transition:animateHeader>
     </div>
 </section>
 <section class="section__2">
