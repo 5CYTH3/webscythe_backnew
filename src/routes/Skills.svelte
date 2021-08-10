@@ -1,4 +1,7 @@
 <script>
+    export let location;
+import SkillCard from '../components/SkillCard.svelte';
+    import { fetchData } from '../dbAccess'
     console.log("?... Skills page loaded !");
 </script>
 
@@ -11,66 +14,11 @@
             </div>
         </div>
         <div class="grid">
-            <div class="grid__item">
-                <div class="top__container">
-                    <h4>HTML</h4>
-                    <img src="res/devlang/HTML.png.png" alt="">
-                </div>
-                <div class="perc__container">
-                    <div class="percentage1"></div>
-                </div>
-                <p>95%</p>
-            </div>
-            <div class="grid__item">
-                <div class="top__container">
-                    <h4>SASS</h4>
-                    <img src="res/devlang/sass.svg" alt="">
-                </div>
-                <div class="perc__container">
-                    <div class="percentage2"></div>
-                </div>
-                <p>80%</p>
-            </div>
-            <div class="grid__item">
-                <div class="top__container">
-                    <h4>JS</h4>
-                    <img src="res/devlang/JS.svg" alt="">
-                </div>
-                <div class="perc__container">
-                    <div class="percentage3"></div>
-                </div>
-                <p>40%</p>
-            </div>
-            <div class="grid__item">
-                <div class="top__container">
-                    <h4>Java</h4>
-                    <img src="res/devlang/java.svg" alt="">
-                </div>
-                <div class="perc__container">
-                    <div class="percentage4"></div>
-                </div>
-                <p>70%</p>
-            </div>
-            <div class="grid__item">
-                <div class="top__container">
-                    <h4>Flutter</h4>
-                    <img src="res/devlang/flutter-logo.svg" alt="">
-                </div>
-                <div class="perc__container">
-                    <div class="percentage5"></div>
-                </div>
-                <p>50%</p>
-            </div>
-            <div class="grid__item">
-                <div class="top__container">
-                    <h4>Svelte</h4>
-                    <img src="res/devlang/svelte.png" alt="">
-                </div>
-                <div class="perc__container">
-                    <div class="percentage6"></div>
-                </div>
-                <p>30%</p>
-            </div>
+            {#await fetchData('skills') then data}
+                {#each data as { langName, imgUrl, percentageValue}}
+                    <SkillCard imgUrl={imgUrl} langName={langName} percentageValue={percentageValue} />
+                {/each}
+            {/await}
         </div>
     </div>
 </section>
@@ -86,7 +34,7 @@
         </div>
         <div class="skill_wrapper">
             <img src="" alt="">
-            <h3>Github</h3>
+            <h3>Git</h3>
         </div>
         <div class="skill_wrapper">
             <img src="" alt="">

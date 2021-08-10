@@ -1,19 +1,7 @@
 <script>
-    import { createClient } from '@supabase/supabase-js'
+    import { fetchData } from "../dbAccess"
     import Card from '../components/Card.svelte'
     import { animateHeader } from "../animation";
-
-
-    const supabaseUrl = process.env.API_URL;
-    const supabaseKey = process.env.API_KEY;
-    const supabase = createClient(supabaseUrl, supabaseKey)
-
-    async function fetchData() {
-
-        let { data: projects, error } = await supabase.from('projects').select('*');
-
-        return projects;
-    }
         
     console.log("?... Home component loaded !")
 </script>
@@ -54,7 +42,7 @@
         <h2>Latest projects</h2>
     </div>
     <div class="grid">
-        {#await fetchData() then data}
+        {#await fetchData('projects') then data}
             {#each data as { name, img_url, description, link }}
                 <Card description={description} link={link} name={name} image_url={img_url} />
             {/each}
