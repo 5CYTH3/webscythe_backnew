@@ -11,7 +11,6 @@
     async function fetchData() {
 
         let { data: projects, error } = await supabase.from('projects').select('*');
-        console.log(projects)
 
         return projects;
     }
@@ -88,7 +87,3 @@
         </div>
     </div>
 </section>
-
-<footer>
-    
-</footer>
