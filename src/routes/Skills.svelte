@@ -1,6 +1,6 @@
 <script>
     export let location;
-import SkillCard from '../components/SkillCard.svelte';
+    import SkillCard from '../components/card/SkillCard.svelte';
     import { fetchData } from '../dbAccess'
     console.log("?... Skills page loaded !");
 </script>

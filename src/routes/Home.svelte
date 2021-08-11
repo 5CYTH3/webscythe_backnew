@@ -1,6 +1,6 @@
 <script>
     import { fetchData } from "../dbAccess"
-    import Card from '../components/Card.svelte'
+    import Card from '../components/card/Card.sveltevelte'
     import { animateHeader } from "../animation";
         
     console.log("?... Home component loaded !")
