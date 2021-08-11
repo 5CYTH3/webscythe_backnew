@@ -111,10 +111,10 @@
         margin-bottom: 30px;
         
 
-        h2 {
+        h3 {
             color: $accent;
-            text-decoration: underline;
-            text-decoration-color: $secondary;
+            font-style: italic;
+            
         }
 
     }
@@ -157,6 +157,10 @@
         margin-top: 20px;
         margin-bottom: 20px;
         @include center;
+
+        h3 {
+            font-style: italic;
+        }
 
     }
 

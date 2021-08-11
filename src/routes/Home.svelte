@@ -19,7 +19,7 @@
 </section>
 <section class="section__2">
     <div class="title__container">
-        <h2>About me</h2>
+        <h3>About me</h3>
     </div>
     <div class="main__second">
         <div class="para__container">
@@ -39,7 +39,7 @@
 </section>
 <section class="section__3">
     <div class="title__container">
-        <h2>Latest projects</h2>
+        <h3>Latest projects</h3>
     </div>
     <div class="grid">
         {#await fetchData('projects') then data}
