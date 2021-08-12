@@ -26,11 +26,13 @@
     </div>
 </section>
 <section class="section__2c">
-    <div class="grid">
-        {#await fetchData('random-skills') then data}
-            {#each data as { name, img_url }}
-                <SkillCardRandom img_url={img_url} name={name} />
-            {/each}
-        {/await}
+    <div class="grid__wrapper">
+        <div class="grid">
+            {#await fetchData('random-skills') then data}
+                {#each data as { name, img_url }}
+                    <SkillCardRandom img_url={img_url} name={name} />
+                {/each}
+            {/await}
+        </div>
     </div>
 </section>

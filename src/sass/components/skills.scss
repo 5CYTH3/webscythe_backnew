@@ -1,13 +1,13 @@
 .section__1c {
-    display: flex;
+    @include center;
     flex-direction: column;
 
     .main__wrapper {
         width: 70%;
         display: flex;
-        justify-content: center;
+        @include center;
         flex-direction: column;
-        margin-bottom: 15px;
+        margin-bottom: 35px;
 
         .title__wrapper {
             display: flex;
@@ -96,9 +96,38 @@
 .section__2c {
     background-color: $altern;
 
-    .grid {
+    .grid__wrapper {
+        padding: 20px;
+        border: solid $darken;
+        margin: 30px;
 
-        .grid
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 1.5em;    
+    
+            .skill__wrapper {
+    
+                width: 200px;
+                height: 200px;
+                background-color: $altern;
+                @include center;
+                flex-direction: column;
+
+                img {
+                    clip-path: circle(80%);
+                    height: 70px;
+                    width: 70px;
+                }
+    
+                h3 {
+                    margin-top: 10px;
+                    font-size: 2.3rem;
+                }
+    
+            }
+    
+        }
 
     }
 
