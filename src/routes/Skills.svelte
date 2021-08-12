@@ -13,7 +13,7 @@
         <div class="title__wrapper">
             <div class="title__container">
                 <h2>What I master ?</h2>
-                <p>All the technologies that I've used and I'm familiar with</p>
+                <p>All the languages and frameworks that I've used and I'm familiar with</p>
             </div>
         </div>
         <div class="grid">
@@ -26,13 +26,21 @@
     </div>
 </section>
 <section class="section__2c">
-    <div class="grid__wrapper">
-        <div class="grid">
-            {#await fetchData('random-skills') then data}
-                {#each data as { name, img_url }}
-                    <SkillCardRandom img_url={img_url} name={name} />
-                {/each}
-            {/await}
+    <div class="main__wrapper">
+        <div class="title__wrapper">
+            <div class="title__container">
+                <h2>Random skills</h2>
+                <p>Technologies that I use everyday</p>
+            </div>
+        </div>
+        <div class="grid__wrapper">
+            <div class="grid">
+                {#await fetchData('random-skills') then data}
+                    {#each data as { name, img_url }}
+                        <SkillCardRandom img_url={img_url} name={name} />
+                    {/each}
+                {/await}
+            </div>
         </div>
     </div>
 </section>
