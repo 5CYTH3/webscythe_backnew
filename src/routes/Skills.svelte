@@ -1,7 +1,10 @@
 <script>
-    export let location;
     import SkillCard from '../components/card/SkillCard.svelte';
+    import SkillCardRandom from '../components/card/SkillCardRandom.svelte';
     import { fetchData } from '../dbAccess'
+
+    export let location;
+
     console.log("?... Skills page loaded !");
 </script>
 
@@ -24,25 +27,10 @@
 </section>
 <section class="section__2c">
     <div class="grid">
-        <div class="skill_wrapper">
-            <img src="" alt="">
-            <h3>Gulp</h3>
-        </div>
-        <div class="skill_wrapper">
-            <img src="" alt="">
-            <h3>Firebase</h3>
-        </div>
-        <div class="skill_wrapper">
-            <img src="" alt="">
-            <h3>Git</h3>
-        </div>
-        <div class="skill_wrapper">
-            <img src="" alt="">
-            <h3>Figma</h3>
-        </div>
-        <div class="skill_wrapper">
-            <img src="res/lang/gopher.svg" alt="">
-            <h3>Golang</h3>
-        </div>
+        {#await fetchData('random-skills') then data}
+            {#each data as { name, img_url }}
+                <SkillCardRandom img_url={img_url} name={name} />
+            {/each}
+        {/await}
     </div>
 </section>

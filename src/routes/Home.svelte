@@ -1,6 +1,6 @@
 <script>
     import { fetchData } from "../dbAccess"
-    import Card from '../components/card/Card.sveltevelte'
+    import Card from '../components/card/Card.svelte'
     import { animateHeader } from "../animation";
         
     console.log("?... Home component loaded !")
@@ -47,7 +47,6 @@
                 <Card description={description} link={link} name={name} image_url={img_url} />
             {/each}
         {/await}
-
     </div>
 </section>
 <section class="section__4">
