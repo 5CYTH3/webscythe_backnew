@@ -18,7 +18,7 @@
         </div>
         <div class="grid">
             {#await fetchData('skills') then data}
-                {#each data as { langName, imgUrl, percentageValue}}
+                {#each data as { langName, imgUrl, percentageValue }}
                     <SkillCard imgUrl={imgUrl} langName={langName} percentageValue={percentageValue} />
                 {/each}
             {/await}
