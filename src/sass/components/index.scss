@@ -60,7 +60,6 @@
                 width: 120px;
                 @include center;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                color: $primary;
                 font-size: 1.3rem;
                 border: none;
                 border-radius: 15px;
@@ -68,6 +67,11 @@
 
                 box-shadow: 0 5px 15px rgba(0, 0, 0, .20);
                 transition: .2s;
+
+                a {
+                    color: $primary;
+      
+                }
 
                 &:hover {
                     transition: .2s;

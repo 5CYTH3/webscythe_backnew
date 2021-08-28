@@ -12,13 +12,13 @@
             <h2 transition:animateHeader>Hi, I'm <span>Lucas</span></h2>
             <h5 id="job" transition:animateHeader>Front-End / Mobile Developer</h5>
             <p transition:animateHeader>with open-minded code habits</p>
-            <button transition:animateHeader>About</button>
+            <button transition:animateHeader><a href="#about">About</a></button>
         </div>
         <img src="/res/img/blobchibi.png" alt="" transition:animateHeader>
     </div>
 </section>
 <section class="section__2">
-    <div class="title__container">
+    <div id ="about" class="title__container">
         <h3>About me</h3>
     </div>
     <div class="main__second">
