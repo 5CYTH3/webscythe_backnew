@@ -1,16 +1,20 @@
 ///////////////////////
-// Header responsive //
+//   responsive //
 ///////////////////////
 @media screen and (min-width: 600px) {
     
-    nav {
+    header {
 
-        .nav__menu {
+        nav {
 
-            .nav__list {
-                display: flex;
-                transition: .5s;
-                
+            .nav__menu {
+    
+                .nav__list {
+                    display: flex;
+                    transition: .5s;
+                    
+                }
+        
             }
     
         }
@@ -22,7 +26,13 @@
         display: none;
     }
 
+    .side-nav__list {
+        display: none;
+    }
+
 }
+
+
 
 //////////////////////////////
 // First section responsive //
@@ -537,6 +547,22 @@
 
                 grid-template-columns: 1fr;
 
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 533px) {
+    
+    .section__1c {
+
+        .main__wrapper {
+
+            .title__wrapper {
+                margin-top: 25px;
+                
             }
 
         }
