@@ -1,19 +1,17 @@
 <section class="section__1b">
-    <div>
+    <div class="title__separator">
         <h1></h1>
     </div>
-    <div>
-        <div>
+    <div class="sep__te">
+        <div class="sep__left">
             <div>
-                <p><i></i>Instagram</p>
-                <p><i></i>eMail</p>
-                <p><i></i>Twitter</p>
-                <p><i></i>Github</p>
-                <p><i></i>Discord</p>
+                <p><i class="uil uil-instagram"></i>Instagram - @scythe_crea</p>
+                <p><i class="uil uil-envelope"></i>eMail - ScytheD@outlook.fr</p>
+                <p><i class="uil uil-twitter-alt"></i>Twitter - @Scythe</p>
+                <p><i class="uil uil-github-alt"></i>Github - 5CYTH3</p>
+                <p><i class="uil uil-discord"></i>Discord - @Scythe#0356</p>
             </div>
         </div>
-        <div>
-            <img src="" alt="">
-        </div>      
+        <img src="/res/img/illustrations/messaging.svg" alt="">
     </div>
 </section>

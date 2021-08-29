@@ -1,5 +1,19 @@
 <script>
     import { Link } from "svelte-routing";
+import { fix_and_destroy_block } from "svelte/internal";
+
+    $: asideShown = false;
+
+    function toggleAside() {
+        if(asideShown == true) {
+            asideShown = !asideShown
+            console.log(asideShown);
+        } else {
+            asideShown = !asideShown
+            console.log(asideShown)
+        }
+
+    }
 
 </script>
 <header id="header">
@@ -11,7 +25,15 @@
                 <li id="skills__header"><Link to="Skills" class="nav__link"><i class="uil uil-clipboard-alt"></i>Skills</Link></li>
                 <li id="github__header"><a href="https://github.com/5CYTH3" class="nav__link"><i class="uil uil-github-alt"></i>Github</a></li>
             </ul>
-        <i class="uil uil-bars"></i>
+            <i class="uil uil-bars" on:click={toggleAside}></i>
+            {#if asideShown == true}
+                <ul class="side-nav__list" id="side-nav-list">
+                    <li id="contact__header"><Link to="Contact" class="nav__link"><i class="uil uil-diary"></i>Contact</Link></li>
+                    <li id="skills__header"><Link to="Skills" class="nav__link"><i class="uil uil-clipboard-alt"></i>Skills</Link></li>
+                    <li id="github__header"><a href="https://github.com/5CYTH3" class="nav__link"><i class="uil uil-github-alt"></i>Github</a></li>
+                </ul>
+            {/if}
+
         </div>
     </nav>
 </header>

@@ -5,7 +5,9 @@
 	import Home from "./routes/Home.svelte"
 	import Navbar from './components/Navbar.svelte'
 	import Footer from './components/Footer.svelte'
-    export let url = "";
+	export let url = "";
+
+
 
 	console.log("?... App loaded !");
 </script>

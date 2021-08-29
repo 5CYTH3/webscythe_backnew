@@ -29,7 +29,7 @@ header {
             flex-direction: row;
             margin-right: 15px;
 
-            ul {
+            .nav__list {
                 display: none;
                 flex-direction: row;
                 transition: .5s;
@@ -67,6 +67,46 @@ header {
                 }
     
             }
+
+            /*
+            .side-nav__list {
+                display: none;
+                flex-direction: row;
+                transition: .5s;
+
+                li {
+                    @include center;
+                    list-style-type: none;
+                    text-decoration: none;
+                    margin-right: 40px;
+                    border-width: 0;
+                    transition: all .1s cubic-bezier(0.19, 1, 0.22, 1);
+
+                    &:hover {
+                        border-width: 100%;
+                        border-bottom: solid;
+                        border-color: $secondary;
+                        transition: all .1s cubic-bezier(0.19, 1, 0.22, 1);
+
+                    }
+                
+                    a {
+                        font-size: 1.2rem;
+                        
+                        i {
+                            margin-right: 2px;
+
+                        }
+                        
+                    }
+        
+                    h1 {
+                        font-size: 2rem;
+                    }
+        
+                }
+    
+            }*/
 
         }
 
