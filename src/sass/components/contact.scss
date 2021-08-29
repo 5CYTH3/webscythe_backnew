@@ -1,0 +1,51 @@
+
+
+.section__1b {
+
+    width: 100%;
+
+    .title__separator {
+        
+        h1 {
+
+        }
+    
+    }
+
+    .sep__te {
+
+        width: 90%;
+        @include center;
+        justify-content: space-around;
+        flex-direction: row;
+        
+
+        .sep__left {
+
+            div {
+
+                p {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    font-size: 1.7rem;
+
+                    i {
+                        margin-right: 5px;
+                    }
+
+                }
+
+            }
+        
+        }
+
+
+        img {
+            height: 40%;
+            width: 40%;
+
+        }
+
+    }
+
+}
