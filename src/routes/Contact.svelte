@@ -5,6 +5,7 @@
     <div class="sep__te">
         <div class="sep__left">
             <div>
+
                 <p><i class="uil uil-instagram"></i>Instagram - @scythe_crea</p>
                 <p><i class="uil uil-envelope"></i>eMail - ScytheD@outlook.fr</p>
                 <p><i class="uil uil-twitter-alt"></i>Twitter - @Scythe</p>
