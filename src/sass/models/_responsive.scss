@@ -14,10 +14,6 @@
                     transition: .5s;
                     
                 }
-    
-                .side-nav__list {
-                    display: none;
-                }
         
             }
     
@@ -30,7 +26,13 @@
         display: none;
     }
 
+    .side-nav__list {
+        display: none;
+    }
+
 }
+
+
 
 //////////////////////////////
 // First section responsive //
@@ -545,6 +547,22 @@
 
                 grid-template-columns: 1fr;
 
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 533px) {
+    
+    .section__1c {
+
+        .main__wrapper {
+
+            .title__wrapper {
+                margin-top: 25px;
+                
             }
 
         }
