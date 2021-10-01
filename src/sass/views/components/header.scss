@@ -1,5 +1,9 @@
+@import '../../utils/var';
+@import '../../utils/mixins';
+
 header {
     height: 70px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,9 +16,11 @@ header {
         width: 100%;
         max-width: 968px;
 
-        h1 {
+        #title__header {
             margin-left: 20px;
-
+            font-size: 2rem;
+            font-family: 'Syncopate';
+            color: $accent;
         }
 
         .uil-bars {
@@ -109,6 +115,37 @@ header {
             font-size: 2rem;
         }
 
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    
+    header {
+
+        nav {
+
+            .nav__menu {
+    
+                .nav__list {
+                    display: flex;
+                    transition: .5s;
+                    
+                }
+        
+            }
+
+            .uil-bars {
+                transition: .5s;
+                display: none;
+            }
+    
+        }
+
+    }
+
+    .side-nav__list {
+        display: none;
     }
 
 }

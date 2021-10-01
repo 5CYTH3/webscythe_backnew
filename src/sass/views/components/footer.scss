@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600;900&display=swap');
+
+@import '../../utils/var';
+@import '../../utils/mixins';
+
 footer {
     background-color: #202020;
     display: flex;
