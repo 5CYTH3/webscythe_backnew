@@ -2,7 +2,7 @@
     import { fetchData } from "../dbAccess"
     import Card from '../components/card/Card.svelte'
     import { animateHeader } from "../animation";
-        
+
     console.log("?... Home component loaded !")
 </script>
 
