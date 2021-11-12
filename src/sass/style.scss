@@ -1,17 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@0;1&display=swap');
 
-@import 'models/var';
-@import 'models/fonts';
-@import 'models/mixins';
-
-@import 'components/index.scss';
-@import 'components/header.scss';
-@import 'components/footer.scss';
-@import 'components/skills.scss';
-@import 'components/contact.scss';
-
-@import 'models/responsive';
-
+@import 'utils/var';
+@import 'utils/fonts';
+@import 'utils/mixins';
 
 // sass src/sass/style.scss:public/build/bundle.css --watch
 

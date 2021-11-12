@@ -44,3 +44,7 @@
         </div>
     </div>
 </section>
+
+<style lang="scss" global>
+    @import '../sass/views/skills.scss';
+</style>

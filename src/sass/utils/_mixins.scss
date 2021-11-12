@@ -1,0 +1,14 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@mixin card-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 100%;
+
+}
