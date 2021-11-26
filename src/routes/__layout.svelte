@@ -5,10 +5,11 @@
 
 <svelte:head>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>The Webscythe</title>
 </svelte:head>
 
 <Navbar />
-<main>
+<main> 
     <slot></slot>
 </main>
 <Footer />

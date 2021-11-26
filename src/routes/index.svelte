@@ -2,15 +2,12 @@
     import { fetchData } from "../dbAccess"
     import Card from '../components/card/Card.svelte'
     import { fade } from 'svelte/transition'
-
-    console.log("?... Home component loaded !")
-
 </script>
 
 <section class="section__1">
     <div class="main__container">
         <div class="text__container">
-            <h2 in:fade="{{delay: 100}}" out:fade>Hi, I'm <span>Lucas</span></h2>
+            <h2 in:fade="{{delay: 100}}" out:fade>Hi, I'm <span>Scythe</span></h2>
             <h5 in:fade="{{delay: 200}}" out:fade>Front-End / Mobile Developer</h5>
             <p in:fade="{{delay: 300}}" out:fade>with open-minded code habits</p>
             <button in:fade="{{delay: 400}}" out:fade><a href="#about">About</a></button>

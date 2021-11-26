@@ -6,10 +6,8 @@
     function toggleAside() {
         if(asideShown == true) {
             asideShown = !asideShown
-            console.log(asideShown);
         } else {
             asideShown = !asideShown
-            console.log(asideShown)
         }
 
     }
