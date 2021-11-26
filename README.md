@@ -5,4 +5,4 @@ Checklist :
 - [x] Homepage
 - [x] Skills page 
 - [x] Contact page
-- [] Responsive of contact page
+- [ ] Responsive of contact page
