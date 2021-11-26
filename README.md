@@ -1,5 +1,5 @@
 # Webscythe 
-Here is my personal portfolio. It is running under SvelteKit and is powered by netlify.  
+Here is my personal portfolio. It is running under [SvelteKit](https://kit.svelte.dev/) and is powered by netlify.  
 It uses the [Supabase](https://supabase.io) database to fetch Skills page data.
 
 Checklist :
