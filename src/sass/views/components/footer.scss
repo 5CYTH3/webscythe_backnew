@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600;900&display=swap');
+
+@import '../../utils/var';
+@import '../../utils/mixins';
+
+footer {
+    background-color: #202020;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    ul {
+
+        li {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+            color: $altern;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+            h1 {
+                font-family: 'Montserrat';
+                font-weight: 100;
+                color: $altern;
+
+            }
+
+            i {
+                color: $altern;
+            }
+
+            p {
+                margin-left: 15px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: $altern;
+
+            }
+
+
+        }
+
+    }
+
+    .left__part {
+        margin-left: 50px;
+
+    }
+
+    .right__part {
+        margin-right: 50px;
+
+        a {
+            color: $altern;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+
+
+}

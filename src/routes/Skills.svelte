@@ -2,10 +2,6 @@
     import SkillCard from '../components/card/SkillCard.svelte';
     import SkillCardRandom from '../components/card/SkillCardRandom.svelte';
     import { fetchData } from '../dbAccess'
-
-    export let location;
-
-    console.log("?... Skills page loaded !");
 </script>
 
 <section class="section__1c">
@@ -44,3 +40,7 @@
         </div>
     </div>
 </section>
+
+<style lang="scss" global>
+    @import '../sass/views/skills.scss';
+</style>

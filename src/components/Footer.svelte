@@ -26,3 +26,7 @@
         <li><a href="https://discordapp.com/users/275534521586155520/" target="blank">@Discord</a></li>
     </ul>
 </footer>
+
+<style lang="scss" global>
+    @import '../sass/views/components/footer.scss';
+</style>
